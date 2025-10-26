@@ -1,18 +1,16 @@
 {
   "type": "module",
-  "name": "quake-detector-lite",
+  "name": "earthquakeapi",
   "version": "1.0.0",
-  "description": "",
-  "main": "proxy.js",
+  "description": "PHIVOLCS and USGS earthquake data API",
+  "main": "api/proxy.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node api/proxy.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
+    "axios": "^1.7.7",
+    "cheerio": "^1.0.0-rc.12",
     "cors": "^2.8.5",
-    "express": "^5.1.0",
-    "node-fetch": "^3.3.2"
+    "express": "^5.1.0"
   }
 }
